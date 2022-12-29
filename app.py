@@ -13,7 +13,7 @@ app.register_blueprint(loader_blueprint)
 app.config['POST_PATH'] = POST_PATH
 
 
-@app.route("/upoads/<path:path>")
+@app.route("/uploads/<path:path>")
 def static_dir(path):
     return send_from_directory("uploads", path)
 
